@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<title>PetZen</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Author: Garshin K. V. Site para cuidar do seu melhor animal de estimação">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240518011902">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="21.77" height="21.27">
+							<path d="M2.02 1.77 20 19.5m-.25-17.73L1.77 19.5" style="fill:none;stroke:#fbbc05;stroke-linecap:square;stroke-width:2.5px" />
+						</svg>
+					</button>
+
+					<div class="popup__text text-block">
+
+						<div class="text-block__login">
+							<h2 class="text-block__title">Login</h2>
+							<div class="text-block__paragraph">
+								<p>Faça login para acessar a sua conta</p>
+							</div>
+						</div>
+
+						<div class="text-block__main-content main-content">
+							<h3 class="main-content__caption">Pet <span>Zen</span></h3>
+
+							<form class="main-content__login-form" action="#" method="GET" enctype="multipart/form-data">
+								<div class="main-content__inner-cell-login-mail">
+									<label for="mail-login" class="main-content__label-email-login">Email</label>
+									<input id="mail-login" type="email" class="main-content__input-email-login" name="mail-login-input" placeholder="Insira o seu email" required>
+								</div>
+
+								<div class="main-content__inner-cell-login-senha">
+									<label for="senha-login" class="main-content__label-senha-login">Senha</label>
+									<input id="senha-login" type="password" class="main-content__input-senha-login" name="senha-login-input" placeholder="Insira a sua senha" required>
+								</div>
+
+								<a href="#" class="main-content__password">Esqueceu a senha?</a>
+
+								<div class="main-content__button-wrap">
+									<button type="submit" class="main-content__btn-enter-login">Acessar</button>
+								</div>
+							</form>
+
+							<div class="main-content__social-access social-access">
+								<h4 class="social-access__subtitle">Ou acesse com</h4>
+
+								<div class="social-access__icons-items">
+									<a class="social-access__icon-link" href="https://www.google.com/intl/por/gmail/" target="_blank">
+										<img src="img/figure_decore/icon_google.svg" alt="Google" class="social-access__pic-icon">
+									</a>
+
+									<a class="social-access__icon-link" href="https://www.facebook.com/" target="_blank">
+										<img src="img/figure_decore/icon_fc.svg" alt="Facebook" class="social-access__pic-icon">
+									</a>
+								</div>
+
+								<div class="main-content__register register">
+									<p class="register__dont-account">Não possui uma conta?</p>
+									<button id="login" type="button" class="register__jump-form-log" aria-label="Go To The Registration Form">
+										Cadastre-se
+									</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<header class="header header--setup" data-lp>
+			<div class="header__container">
+				<div class="header__menu menu">
+
+					<div class="menu__logo">Pet <span class="menu__word-logo">Zen</span></div>
+
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link" data-goto-header data-goto=".hero">Home</a>
+							</li>
+
+							<li class="menu__item">
+								<a href="#" class="menu__link" data-goto-header data-goto=".council">Sobre</a>
+							</li>
+
+							<li class="menu__item">
+								<a href="#" class="menu__link" data-goto-header data-goto=".connection">Serviços</a>
+							</li>
+
+							<li class="menu__item">
+								<a href="#" class="menu__link" data-goto-header data-goto=".app">Nosso App</a>
+							</li>
+
+							<li class="menu__item">
+								<a href="#" class="menu__link" data-goto-header data-goto=".update">Blog</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="menu__subitem-wrap">
+
+						<a href="#" class="menu__link-acessar" data-da=".menu__list, 991" data-popup="#popup">Acessar</a>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+
+
+				</div>
+			</div>
+		</header>
+		<main class="page page--option">
+
+			<!-- TODO BlockHero -->
+			<div class="hero hero--setup">
+				<div class="hero__container">
+
+					<article class="hero__text-box">
+						<h1 class="hero__main-title">O melhor suporte no cuidado para seu <br> <i class="hero__slogan">melhor amigo</i></h1>
+
+						<div class="hero__paragraph">
+							<p>
+								Aqui, você encontrará respostas para todas as suas dúvidas, desde a escolha da melhor ração até dicas essenciais para garantir o bem-estar do seu companheiro peludo.
+							</p>
+						</div>
+
+						<div class="hero__wrap-acessar">
+							<a href="#" class="hero__acessar-link" data-popup="#popup">Acessar</a>
+						</div>
+					</article>
+
+					<div class="hero__poster poster-box">
+						<div class="poster-box__inner-pic" data-da=".hero__text-box, 767.98, 1">
+							<img src="img/hero_pets.webp" alt="Poster Pets" class="poster-box__trump" width="490" height="542">
+
+							<img src="img/animals_mobile.svg" alt="Pets" class="poster-box__animals-mobile">
+						</div>
+
+						<div class="poster-box__decore-item">
+							<div class="poster-box__inner-bubble">
+								<img src="img/figure_decore/ellipse.svg" alt="Elipse Decore" class="poster-box__bubble poster-box__bubble--left">
+							</div>
+							<div class="poster-box__inner-bubble poster-box__inner-bubble--right">
+								<img src="img/figure_decore/ellipse.svg" alt="Elipse Decore" class="poster-box__bubble poster-box__bubble--right">
+							</div>
+							<span class="poster-box__item poster-box__item--circle-lf">i</span>
+							<span class="poster-box__item poster-box__item--circle-rt">i</span>
+							<span class="poster-box__item poster-box__item-star">x</span>
+							<span class="poster-box__item poster-box__item-hart">h</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- TODO BlockCouncil -->
+			<section class="council council--setup">
+				<div class="council__container">
+					<h2 class="council__title-section">Saiba dicas essenciais para dar o conforto que o seu pet merece!</h2>
+
+					<div class="council__set-cards card">
+						<!-- $card #1-->
+						<article class="card__cell">
+
+							<div class="card__logo">o</div>
+							<h3 class="card__caption">Adestramento</h3>
+							<div class="card__paragraph">
+								<p>Corrija comportamentos, eduque, divirta-se e fortaleça a relação com seu pet.</p>
+							</div>
+						</article>
+
+						<!-- $card #2-->
+						<article class="card__cell">
+
+							<div class="card__logo">q</div>
+							<h3 class="card__caption">Alimentação</h3>
+							<div class="card__paragraph">
+								<p>Saiba dietas equilibradas, aprenda sobre dietas caseiras, escolha a melhor ração e muito mais.</p>
+							</div>
+
+						</article>
+
+						<!-- $card #3-->
+						<article class="card__cell">
+
+							<div class="card__logo">p</div>
+							<h3 class="card__caption">Adoção</h3>
+							<div class="card__paragraph">
+								<p>Descubra nomes encantadores, dicas, o que fazer e tudo o que você precisa saber para adotar um pet.</p>
+							</div>
+
+						</article>
+
+						<!-- $card #4-->
+						<article class="card__cell">
+
+							<div class="card__logo">t</div>
+							<h3 class="card__caption">Saúde</h3>
+							<div class="card__paragraph">
+								<p>Aprenda tudo o que precisa saber sobre a saúde do seu pet e proteja seu pet de doenças.</p>
+							</div>
+
+						</article>
+
+						<!-- $card #5-->
+						<article class="card__cell">
+
+							<div class="card__logo">r</div>
+							<h3 class="card__caption">Cuidados</h3>
+							<div class="card__paragraph">
+								<p>Entenda o cio, gestação, higiene dental, cuidado das orelhas e muito mais.</p>
+							</div>
+
+						</article>
+
+						<!-- $card #6-->
+						<article class="card__cell">
+
+							<div class="card__logo">s</div>
+							<h3 class="card__caption">Curiosidades</h3>
+							<div class="card__paragraph">
+								<p>Aprenda dicas, descubra espécies em perigo de extinção, saiba diversas raças e muito mais. </p>
+							</div>
+
+						</article>
+						<button class="card__show-more" aria-label="Button Mostre mais/Esconder"></button>
+					</div>
+				</div>
+			</section>
+
+			<!-- TODO BlockLink -->
+			<div class="connection connection--setup">
+				<div class="connection__container">
+					<div class="connection__block-wrap">
+
+						<article class="connection__text-chapter">
+							<h2 class="connection__title">Você e o seu pet ainda mais conectados!
+							</h2>
+							<div class="connection__pargraph">
+								<p>Nosso app simplifica a vida do tutor, registrando o histórico de saúde do pet, gerenciando gastos mensais e conectando você a uma comunidade animada de pais de pets.</p>
+							</div>
+							<div class="connection__agora-inner">
+								<a href="#" class="connection__link-agore" data-popup="#popup">Acessar agora!</a>
+							</div>
+						</article>
+
+						<div class="connection__wrap-pic" data-da=".connection__text-chapter,1069.98,1">
+							<img src="img/cat.svg" alt="Cat" class="connection__cat-img" width="533" height="500" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- TODO BlockApp -->
+			<div class="app app--setup">
+				<div class="app__container">
+
+					<div class="app__inner">
+
+						<div class="app__body-tel" data-da=".app__content,869.98,1">
+							<img src="img/iphpone.svg" alt="Iphpone" class="app__iphpone-pic" width="310" height="613" loading="lazy">
+						</div>
+
+						<div class="app__inner-bubble app__inner-bubble--left" data-da=".app__content,869.98,1">
+							<img src="img/figure_decore/ellipse.svg" alt="Elipse Decore" class="app__bubble app__bubble--left">
+						</div>
+
+						<div class="app__inner-bubble app__inner-bubble--right" data-da=".app__content,869.98,1">
+							<img src="img/figure_decore/ellipse.svg" alt="Elipse Decore" class="app__bubble app__bubble--right">
+						</div>
+
+					</div>
+
+					<article class="app__content content">
+						<h2 class="app__title">Baixe o nosso App!</h2>
+
+						<ul class="content__list">
+							<li class="content__item">
+								<h3 class="content__supcaption">Alertas e lembretes inteligentes</h3>
+								<div class="content__paragraph">
+									<p>Receba notificações personalizadas para vacinas, consultas veterinárias e outras necessidades, garantindo que você nunca perca um cuidado essencial para o seu pet.</p>
+								</div>
+							</li>
+							<li class="content__item">
+								<h3 class="content__supcaption">Interface amigável para todos</h3>
+								<div class="content__paragraph">
+									<p>Nosso App é projetada para ser intuitiva, permitindo que todos, independentemente da experiência digital, possam aproveitar ao máximo os recursos do aplicativo.</p>
+								</div>
+							</li>
+							<li class="content__item">
+								<h3 class="content__supcaption">Design intuitivo e atraente</h3>
+								<div class="content__paragraph">
+									<p>Desfrute de uma interface visualmente agradável e fácil de navegar, projetada para proporcionar uma experiência fluida e atraente a cada usuário.</p>
+								</div>
+							</li>
+						</ul>
+
+						<div class="content__jump">
+							<a href="https://play.google.com/store/apps" target="_blank" class="content__link-download">Download App</a>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<!-- TODO BlockInfo -->
+			<section class="info info--setup">
+				<div class="info__container">
+					<div class="info__box-title">
+						<h2 class="info__title">Saiba o que os usuários do <span class="info__caption">Pet </span><span class="info__subcaption">Zen</span> estão achando do App!</h2>
+					</div>
+
+					<div class="info__holder ticket" data-showmore="items" data-showmore-media="767.98,max">
+
+						<div class="ticket__box-cards" data-showmore-content>
+							<!-- @Ticket #1 -->
+							<div class="ticket__inner">
+								<div class="ticket__desk">
+									<div class="ticket__decore-img">
+										<svg xmlns="http://www.w3.org/2000/svg" width="97.77" height="97.76">
+											<path d="M97.44 74.64c1.1 7.3-.6 13.7-4.8 17.9-4.2 4.3-10.6 5.9-17.9 4.8-8.2-1.3-17.2-6-25.9-13.7-8.7 7.7-17.7 12.4-25.8 13.8-7.3 1.1-13.7-.6-17.9-4.8-4.3-4.2-5.9-10.6-4.8-17.9 1.3-8.2 6-17.1 13.7-25.9-7.7-8.7-12.4-17.6-13.7-25.8-1.1-7.4.5-13.7 4.8-17.9 4.2-4.3 10.5-5.9 17.9-4.8 8.1 1.3 17.1 6 25.9 13.7 8.7-7.7 17.6-12.4 25.8-13.7 7.3-1.1 13.7.6 17.9 4.8 4.3 4.2 5.9 10.6 4.8 17.9-1.3 8.2-6.1 17.1-13.7 25.8 7.7 8.7 12.4 17.6 13.7 25.8Z" style="fill:#323232;stroke-width:0" />
+										</svg>
+										<div class="ticket__pic-envelope">
+											<img src="img/customer/carlos_santana.webp" alt="Carlos Santana" class="ticket__avatar" width="100" height="100" loading="lazy">
+										</div>
+									</div>
+									<div class="ticket__info">
+										<h3 class="ticket__subtitle">Carlos Santana</h3>
+										<div class="ticket__role">Tutor de gato</div>
+									</div>
+									<div class="ticket__label">c</div>
+								</div>
+								<div class="ticket__paragraph">
+									<p>O app simplificou o treinamento e me manteve atualizado sobre a saúde do meu amigo peludo. Nunca foi tão fácil proporcionar o melhor para ele. Recomendo a todos os amantes de animais!</p>
+								</div>
+							</div>
+							<!-- @Ticket #2 -->
+							<div class="ticket__inner">
+								<div class="ticket__desk">
+									<div class="ticket__decore-img">
+										<svg xmlns="http://www.w3.org/2000/svg" width="97.77" height="97.76">
+											<path d="M97.44 74.64c1.1 7.3-.6 13.7-4.8 17.9-4.2 4.3-10.6 5.9-17.9 4.8-8.2-1.3-17.2-6-25.9-13.7-8.7 7.7-17.7 12.4-25.8 13.8-7.3 1.1-13.7-.6-17.9-4.8-4.3-4.2-5.9-10.6-4.8-17.9 1.3-8.2 6-17.1 13.7-25.9-7.7-8.7-12.4-17.6-13.7-25.8-1.1-7.4.5-13.7 4.8-17.9 4.2-4.3 10.5-5.9 17.9-4.8 8.1 1.3 17.1 6 25.9 13.7 8.7-7.7 17.6-12.4 25.8-13.7 7.3-1.1 13.7.6 17.9 4.8 4.3 4.2 5.9 10.6 4.8 17.9-1.3 8.2-6.1 17.1-13.7 25.8 7.7 8.7 12.4 17.6 13.7 25.8Z" style="fill:#323232;stroke-width:0" />
+										</svg>
+										<div class="ticket__pic-envelope">
+											<img src="img/customer/giovanna_lima.webp" alt="Giovanna Lima" class="ticket__avatar" width="100" height="100" loading="lazy">
+										</div>
+									</div>
+									<div class="ticket__info">
+										<h3 class="ticket__subtitle">Giovanna Lima</h3>
+										<div class="ticket__role">Tutora de cachorro</div>
+									</div>
+									<div class="ticket__label">c</div>
+								</div>
+								<div class="ticket__paragraph">
+									<p>Desde que comecei a usar o aplicativo, percebi uma mudança positiva no comportamento do meu pet. As dicas de adestramento são valiosas!</p>
+								</div>
+							</div>
+							<!-- @Ticket #3 -->
+							<div class="ticket__inner">
+								<div class="ticket__desk">
+									<div class="ticket__decore-img">
+										<svg xmlns="http://www.w3.org/2000/svg" width="97.77" height="97.76">
+											<path d="M97.44 74.64c1.1 7.3-.6 13.7-4.8 17.9-4.2 4.3-10.6 5.9-17.9 4.8-8.2-1.3-17.2-6-25.9-13.7-8.7 7.7-17.7 12.4-25.8 13.8-7.3 1.1-13.7-.6-17.9-4.8-4.3-4.2-5.9-10.6-4.8-17.9 1.3-8.2 6-17.1 13.7-25.9-7.7-8.7-12.4-17.6-13.7-25.8-1.1-7.4.5-13.7 4.8-17.9 4.2-4.3 10.5-5.9 17.9-4.8 8.1 1.3 17.1 6 25.9 13.7 8.7-7.7 17.6-12.4 25.8-13.7 7.3-1.1 13.7.6 17.9 4.8 4.3 4.2 5.9 10.6 4.8 17.9-1.3 8.2-6.1 17.1-13.7 25.8 7.7 8.7 12.4 17.6 13.7 25.8Z" style="fill:#323232;stroke-width:0" />
+										</svg>
+										<div class="ticket__pic-envelope">
+											<img src="img/customer/regina_santos.webp" alt="Regina Santos" class="ticket__avatar" width="100" height="100" loading="lazy">
+										</div>
+									</div>
+									<div class="ticket__info">
+										<h3 class="ticket__subtitle">Regina Santos</h3>
+										<div class="ticket__role">Tutora de gato</div>
+									</div>
+									<div class="ticket__label">c</div>
+								</div>
+								<div class="ticket__paragraph">
+									<p>O app não apenas me lembra das vacinas e consultas, mas também me conectou a uma comunidade incrível de amantes de animais.</p>
+								</div>
+							</div>
+						</div>
+
+						<button hidden type="button" class="ticket__block-more" data-showmore-button="50" aria-label="Button Mostre mais/Esconder">
+							<span>Mostre mais</span>
+							<span>Esconder</span>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- TODO BlockUpdate -->
+			<section class="update update--setup">
+				<div class="update__container subs">
+
+					<div class="subs__content-desk content-desk">
+						<div class="content-desk__text-box">
+							<h2 class="content-desk__title">Não perca as nossas atualizações!</h2>
+							<div class="content-desk__paragraph">
+								<p>
+									Cadastre-se para receber novidades, novas ferramentas, descontos, atualizações...
+								</p>
+							</div>
+
+							<ol class="content-desk__list">
+								<li class="content-desk__item">
+									Receba atualizações em primeira mão
+								</li>
+								<li class="content-desk__item">
+									Obtenha cupons de descontos
+								</li>
+								<li class="content-desk__item">
+									Leia artigos sobre temas relevantes
+								</li>
+							</ol>
+						</div>
+
+						<form class="content-desk__insire-form insire-form" action="#" method="GET" enctype="multipart/form-data">
+							<div class="insire-form__wrap-item">
+								<input type="email" class="insire-form__mail-cell" name="mail-cell" placeholder="Insira o seu email..." required>
+								<button type="submit" class="insire-form__btn-send">f</button>
+							</div>
+
+						</form>
+					</div>
+
+					<div class="subs__wrap-img" data-da=".content-desk__text-box,767.98,2">
+						<img src="img/dog.svg" alt="Dog" class="subs__pic">
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__submenu submenu">
+
+					<div class="submenu__hard-level hard-level">
+						<div class="hard-level__logo">Pet <span class="hard-level__word-logo">Zen</span></div>
+
+						<nav class="hard-level__body">
+							<ul class="hard-level__list">
+								<li class="hard-level__item"><a href="#" class="hard-level__link">Home</a></li>
+
+								<li class="hard-level__item"><a href="#" class="hard-level__link">Sobre</a></li>
+
+								<li class="hard-level__item"><a href="#" class="hard-level__link">Serviços</a></li>
+
+								<li class="hard-level__item"><a href="#" class="hard-level__link">Nosso App</a></li>
+							</ul>
+						</nav>
+
+						<div class="hard-level__list-icons">
+							<a target="_blank" href="https://www.linkedin.com/feed/" class="hard-level__icon-link" title="Linkedin">v</a>
+							<a target="_blank" href="https://www.facebook.com/" class="hard-level__icon-link" title="Facebook">u</a>
+							<a target="_blank" href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D" class="hard-level__icon-link" title="Twitter">w</a>
+						</div>
+					</div>
+
+					<div class="submenu__middle-level middle-level">
+
+						<div class="middle-level__inner-title">
+							<h3 class="middle-level__title-form">
+								Entre em contato:
+							</h3>
+						</div>
+
+						<div class="middle-level__box-reg box-reg">
+
+							<div class="box-reg__column-left column-left">
+								<div class="column-left__email-item">Email: email@gmail.com</div>
+								<div class="column-left__phone-item">Phone: 73 9 9999-9999</div>
+								<div class="column-left__address">Endereço:</div>
+							</div>
+
+							<form class="box-reg__form form" action="#" method="GET" enctype="multipart/form-data">
+								<div class="form__email-cell">
+									<input type="email" class="form__input-email" name="email" placeholder="Email" required>
+								</div>
+								<button type="submit" class="form__btn-submit">Inscreva-se no Newsletter</button>
+							</form>
+
+						</div>
+
+					</div>
+
+					<div class="submenu__short-level short-level">
+						<div class="short-level__text">
+							<p>&copy; 2023 Danielle Fragas. Todo os direitos reservados.</p>
+						</div>
+						<a href="#" target="_blank" class="short-level__link-ruls">Política de Privacidade</a>
+						<a href="#" target="_blank" class="short-level__link-ruls">Política de Cookies</a>
+
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240518011902"></script>
+</body>
+
+</html>
