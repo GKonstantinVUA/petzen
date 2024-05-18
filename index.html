@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="description" content="Author: Garshin K. V. Site para cuidar do seu melhor animal de estimação">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240518013425">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240518135614">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +50,7 @@
 								<a href="#" class="main-content__password">Esqueceu a senha?</a>
 
 								<div class="main-content__button-wrap">
-									<button type="submit" class="main-content__btn-enter-login">Acessar</button>
+									<button type="submit" class="main-content__btn-enter-login">Entrar</button>
 								</div>
 							</form>
 
@@ -58,11 +58,11 @@
 								<h4 class="social-access__subtitle">Ou acesse com</h4>
 
 								<div class="social-access__icons-items">
-									<a class="social-access__icon-link" href="https://www.google.com/intl/por/gmail/" target="_blank">
+									<a class="social-access__icon-link" href="https://www.google.com/account/about/" target="_blank" title="Google">
 										<img src="img/figure_decore/icon_google.svg" alt="Google" class="social-access__pic-icon">
 									</a>
 
-									<a class="social-access__icon-link" href="https://www.facebook.com/" target="_blank">
+									<a class="social-access__icon-link" href="https://www.facebook.com/" target="_blank" title="Facebook">
 										<img src="img/figure_decore/icon_fc.svg" alt="Facebook" class="social-access__pic-icon">
 									</a>
 								</div>
@@ -234,7 +234,7 @@
 							</div>
 
 						</article>
-						<button class="card__show-more" aria-label="Button Mostre mais/Esconder"></button>
+						<button type="button" class="card__show-more" aria-label="Button Mostre mais/Esconder"></button>
 					</div>
 				</div>
 			</section>
@@ -320,9 +320,9 @@
 						<h2 class="info__title">Saiba o que os usuários do <span class="info__caption">Pet </span><span class="info__subcaption">Zen</span> estão achando do App!</h2>
 					</div>
 
-					<div class="info__holder ticket" data-showmore="items" data-showmore-media="767.98,max">
+					<div class="info__holder ticket">
 
-						<div class="ticket__box-cards" data-showmore-content>
+						<div class="ticket__box-cards">
 							<!-- @Ticket #1 -->
 							<div class="ticket__inner">
 								<div class="ticket__desk">
@@ -386,12 +386,8 @@
 									<p>O app não apenas me lembra das vacinas e consultas, mas também me conectou a uma comunidade incrível de amantes de animais.</p>
 								</div>
 							</div>
+							<button hidden type="button" class="ticket__block-more" aria-label="Button Mostre mais/Esconder"></button>
 						</div>
-
-						<button hidden type="button" class="ticket__block-more" data-showmore-button="50" aria-label="Button Mostre mais/Esconder">
-							<span>Mostre mais</span>
-							<span>Esconder</span>
-						</button>
 					</div>
 				</div>
 			</section>
@@ -448,13 +444,13 @@
 
 						<nav class="hard-level__body">
 							<ul class="hard-level__list">
-								<li class="hard-level__item"><a href="#" class="hard-level__link">Home</a></li>
+								<li class="hard-level__item"><a href="#" class="hard-level__link" ata-goto-header data-goto=".hero">Home</a></li>
 
-								<li class="hard-level__item"><a href="#" class="hard-level__link">Sobre</a></li>
+								<li class="hard-level__item"><a href="#" class="hard-level__link" data-goto-header data-goto=".council">Sobre</a></li>
 
-								<li class="hard-level__item"><a href="#" class="hard-level__link">Serviços</a></li>
+								<li class="hard-level__item"><a href="#" class="hard-level__link" data-goto-header data-goto=".connection">Serviços</a></li>
 
-								<li class="hard-level__item"><a href="#" class="hard-level__link">Nosso App</a></li>
+								<li class="hard-level__item"><a href="#" class="hard-level__link" data-goto-header data-goto=".app">Nosso App</a></li>
 							</ul>
 						</nav>
 
@@ -505,7 +501,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240518013425"></script>
+	<script src="js/app.min.js?_v=20240518135614"></script>
 </body>
 
 </html>

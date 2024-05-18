@@ -432,7 +432,7 @@ body::after {
 }
 .main-content__input-senha-login {
   height: 3.375rem;
-  width: 347px;
+  max-width: 21.6875rem;
   padding: .625rem 1.0625rem;
   border-radius: 3.375rem;
   border: .0625rem solid var(--fontColorFormSubTitle);
@@ -474,6 +474,7 @@ body::after {
 }
 .main-content__register {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   -webkit-column-gap: .625rem;
@@ -486,7 +487,6 @@ body::after {
 .social-access__subtitle {
   color: var(--fontColorFormSubTitle);
   font-family: Outfit;
-  font-size: 1rem;
   line-height: 1;
   display: flex;
   align-items: center;
@@ -498,7 +498,7 @@ body::after {
 .social-access__subtitle::after,
 .social-access__subtitle::before {
   content: "";
-  width: 6.25rem;
+  width: clamp(4.375rem,-3.125rem + 37.5vw,6.25rem);
   height: .0375rem;
   background: #a39797
 }
@@ -526,15 +526,6 @@ body::after {
 }
 .register__jump-form-log {
   transition: color .25s ease-in-out
-}
-[data-showmore-button] span:last-child {
-  display: none
-}
-._showmore-active [data-showmore-button] span {
-  display: none
-}
-._showmore-active [data-showmore-button] span:last-child {
-  display: block
 }
 .ibg {
   width: 100%;
@@ -1258,7 +1249,7 @@ body {
   box-shadow: 0 .3125rem 0 0 var(--colorBorderTecket);
   padding: .9375rem clamp(1.25rem,.934rem + 1.58vw,2.188rem)
 }
-.ticket__block-more span {
+.ticket__block-more {
   color: var(--fontDecoreLink);
   text-align: center;
   font-size: clamp(1rem,.016rem + 1.59vw,1.375rem);
@@ -1267,7 +1258,8 @@ body {
   border-radius: 2.6363636364em;
   background: var(--fontLogoSubMain);
   padding: .9090909091em 2.7272727273em;
-  transition: all .25S ease-in
+  transition: all .25S ease-in;
+  margin: 0 auto
 }
 .ticket__desk {
   display: flex;
@@ -1795,7 +1787,7 @@ body {
   .menu__body {
     position: fixed;
     width: 100%;
-    height: 60%;
+    height: 63%;
     left: -100%;
     top: var(--headerHightMobile);
     overflow: auto;
@@ -2260,10 +2252,10 @@ body {
   .content__jump:hover .content__link-download {
     background: var(--fontLogoSubMain)
   }
-  .ticket__block-more span {
+  .ticket__block-more {
     cursor: pointer
   }
-  .ticket__block-more span:hover {
+  .ticket__block-more:hover {
     background: var(--colorMain);
     color: var(--fontLogoSubMain)
   }
