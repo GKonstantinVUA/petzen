@@ -574,7 +574,7 @@
         window.addEventListener("resize", toggleItems);
  //!Викликаємо перевірку вікна при зміні розміру вікна
         }));
-    window["FLS"] = true;
+    window["FLS"] = false;
     menuInit();
     pageNavigation();
 })();
